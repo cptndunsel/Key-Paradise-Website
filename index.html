@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Key Paradise Hotel</title>
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="style.css">
+  <!--Font API-->
+  <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <!-- Navigation -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-light p-4">
+    <a class="navbar-brand" href="#">Key Paradise</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+      aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item active">
+          <a class="nav-link text-info" href="index.html">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="rooms.html">Rooms</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="amenities.html" id="navbar-dropdown-link" role="button"
+            data-bs-toggle="dropdown" aria-expanded="false" data-bs-auto-close="outside">Amenities</a>
+          <ul class="dropdown-menu" aria-labelledby="navbar-dropdown-link">
+            <li><a href="accessibility.html" class="dropdown-item">Accessibility</a></li>
+          </ul>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="events.html" id="navbar-dropdown-link" role="button"
+            data-bs-toggle="dropdown" aria-expanded="false" data-bs-auto-close="outside">Events</a>
+          <ul class="dropdown-menu" aria-labelledby="navbar-dropdown-link">
+            <li><a href="requestinfo.html" class="dropdown-item">Request info</a></li>
+          </ul>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="hotelnews.html">Hotel News</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="areaguide.html">Area Guide</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="contact.html">Contact</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Carousel Section -->
+  <section id="check-in" class="check-in">
+    <div id="carouselExample" class="carousel slide" data-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="Home Page images/carousel1.jpg" height="650px" alt="Hotel Image 1" class="d-block w-100">
+          <div class="carousel-caption">
+            <h2 class="text-info">Explore a tropical paradise</h2>
+            <p class="h5 text-center text-secondary">Key West, Florida</p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="Home Page images/Carousel2.jpg" height="650px" alt="Hotel Image 2" class="d-block w-100">
+          <div class="carousel-caption">
+            <h2 class="text-info">Explore a tropical paradise</h2>
+            <p class="h5 text-center text-secondary">Key West, Florida</p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="Home Page images/Carousel3.jpg" height="650px" alt="Hotel Image 3" class="d-block w-100">
+          <div class="carousel-caption">
+            <h2 class="text-info">Explore a tropical paradise</h2>
+            <p class="h5 text-center text-secondary">Key West, Florida</p>
+          </div>
+        </div>
+      </div>
+      <a class="carousel-control-prev" href="#carouselExample" role="button" data-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+      </a>
+      <a class="carousel-control-next" href="#carouselExample" role="button" data-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+      </a>
+    </div>
+  </section>
+
+ <!--reservation-->
+ <section id="reservation" class="reservation">
+  <form id="reservation-form" class="reservation-form" novalidate>
+    <div class="row bg-light p-4 justify-content-center">
+      <div class="col-12">
+        <h5 class="text-secondary mb-4 text-center">Make a Reservation</h5>
+      </div>
+      <div class="col form-group">
+        <label for="check-in-date" class="text-center d-block">Check-in Date</label>
+        <input type="date" class="form-control" id="check-in-date" aria-label="Check-in Date" required>
+        <div id="check-in-date-error" class="error-message"></div>
+      </div>
+      <div class="col form-group">
+        <label for="check-out-date" class="text-center d-block">Check-out Date</label>
+        <input type="date" class="form-control" id="check-out-date" aria-label="Check-out Date" required>
+        <div id="check-out-date-error" class="error-message"></div>
+      </div>
+      <div class="col form-group">
+        <label for="adults" class="text-center d-block">Number of Adults</label>
+        <input type="number" class="form-control" id="adults" aria-label="Number of Adults" required>
+        <div id="adults-error" class="error-message"></div>
+      </div>
+      <div class="col form-group">
+        <label for="children" class="text-center d-block">Number of Children</label>
+        <input type="number" class="form-control" id="children" aria-label="Number of Children" required>
+        <div id="children-error"></div>
+      </div>
+      <div class="col-md-12 text-center form-group">
+        <button type="submit" class="btn btn-info mt-4">Submit</button>
+      </div>
+    </div>
+  </form>
+</section>
+
+  <!-- Welcome Section -->
+  <section id="welcome" class="welcome">
+    <div class="container mt-5 mb-5">
+      <div class="row">
+        <div class="col-md-12">
+          <article>
+            <h3 class="text-info">WelcoParadise Hotel</h3>
+            <p>Discover a world of luxury and tranquility at Key Paradise Hotel. Nestled along the
+              picturesque waterfront,
+              our hotel offers a captivating escape for discerning travelers. Whether you're seeking a
+              relaxing getaway or
+              embarking on a thrilling adventure, our impeccable service and breathtaking views will leave you
+              enchanted.</p>
+            <p>Indulge in the comfort of our elegantly appointed rooms and suites, each meticulously designed to
+              provide
+              serenity and modern convenience. Immerse yourself in the awe-inspiring beauty of the surrounding
+              landscape
+              through large windows that frame stunning vistas of the sparkling water. Our accommodations
+              offer a peaceful
+              retreat, featuring luxurious amenities and plush furnishings that ensure a truly memorable stay.
+            </p>
+            <p>At Key Paradise Hotel, we pride ourselves on delivering unparalleled service and creating
+              unforgettable
+              experiences for our guests. Allow us to exceed your expectations and be your sanctuary of luxury,
+              tranquility, and
+              warm hospitality. Whether you're here for business or leisure, our commitment to excellence ensures that
+              your stay
+              with us will be nothing short of extraordinary.
+            </p>
+          </article>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Summary Section -->
+  <section id="summary" class="summary">
+    <div class="container mt-5 mb-5">
+      <h2 class="text-center text-info mb-4">What we have to offer</h2>
+      <div class="row">
+        <div class="col-md-4">
+          <div class="card h-100 bg-light">
+            <img src="Home Page images/RoomPreview.jpg" class="card-img-top" alt="Room Image">
+            <div class="card-body d-flex flex-column">
+              <h5 class="card-title text-center">Accommodations</h5>
+              <p class="card-text">Our hotel rooms offer comfort and elegance. Thoughtfully designed with modern
+                amenities, plush bedding, and stunning views, they provide a tranquil sanctuary. Choose from standard,
+                deluxe, or suite options for a restful stay. Immerse yourself in serenity and enjoy a memorable
+                experience in our well-appointed rooms.</p>
+              <div class="d-grid text-center">
+                <a href="rooms.html" class="btn btn-info m-2" type="button">Learn more</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card h-100 bg-light">
+            <img src="Home Page images/PoolPreview.jpg" class="card-img-top" alt="Pool Image">
+            <div class="card-body d-flex flex-column">
+              <h5 class="card-title text-center">Amenities</h5>
+              <p class="card-text"> We invite you to discover our hotel's exceptional amenities for your comfort and
+                convenience. Enjoy our inviting swimming pool, fully equipped gym, modern recreation center and serene
+                spa retreat. Unwind, stay fit, and have fun. Experience a memorable stay where luxury, convenience and
+                relaxation meet.</p>
+              <div class="d-grid text-center">
+                <a href="amenities.html" class="btn btn-info m-2" type="button">Learn more</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card h-100 bg-light">
+            <img src="Home Page images/AttractionPreview.jpg" class="card-img-top" alt="Beach Image">
+            <div class="card-body d-flex flex-column">
+              <h5 class="card-title text-center">Attractions</h5>
+              <p class="card-text">Key West is a paradise of attractions. Explore Old Town's charming streets and
+                architecture. Visit the Hemingway Home and Museum for art enthusiasts. Experience stunning sunsets at
+                Mallory Square. Dive into turquoise waters for snorkeling and diving adventures, or relax on beautiful
+                beaches.</p>
+              <div class="d-grid text-center">
+                <a href="areaguide.html" class="btn btn-info m-2" type="button">Learn more</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <br>
+
+  <!-- Footer Section -->
+  <section id="adress" class="adress bg-light text-center">
+    <div class="container mt-5">
+      <div class="row">
+        <div class="col-md-12">
+          <div class="contact-info">
+            <h4 class="mt-3">The Key Paradise Hotel</h4>
+            <h5>Address:</h5>
+            <p>123 Waterfront Street, Key West</p>
+            <h5>Phone:</h5>
+            <p>+1 123 456 7890</p>
+            <h5>Email:</h5>
+            <p>info@keyparadisehotel.com</p>
+            <h5>Follow Us:</h5>
+            <div class="social-links">
+              <a href="#" target="_blank">
+                <img class="p-2" src="Social Media Icons/Facebook.jpg" width="70px" height="70px" alt="Facebook"
+                  class="social-media-icon">
+              </a>
+              <a href="#" target="_blank">
+                <img class="p-2" src="Social Media Icons/Twitter.jpg" width="70px" height="70px" alt="Twitter"
+                  class="social-media-icon">
+              </a>
+              <a href="#" target="_blank">
+                <img class="p-2" src="Social Media Icons/Youtube.jpg" width="70px" height="70px" alt="Youtube"
+                  class="social-media-icon">
+              </a>
+              <a href="#" target="_blank">
+                <img class="p-2" src="Social Media Icons/Pinterest.jpg" width="70px" height="70px" alt="Pinterest"
+                  class="social-media-icon">
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer bg-secondary">
+    <div class="container text-center">
+      <span class="text-white">&copy; 2023 Key Paradise Hotel. All rights reserved.</span>
+    </div>
+  </footer>
+  <!--Non-Bootstrap JS-->
+<script src="index.js"></script>
+  <!-- Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+
+</html>

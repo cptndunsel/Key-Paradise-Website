@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Paradise Hotel</title>
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="style.css">
+  <!--Font API-->
+  <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <!-- Navigation -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-light p-4">
+    <a class="navbar-brand" href="#">Key Paradise</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+      aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="index.html">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="rooms.html">Rooms</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="amenities.html" id="navbar-dropdown-link" role="button"
+            data-bs-toggle="dropdown" aria-expanded="false" data-bs-auto-close="outside">Amenities</a>
+          <ul class="dropdown-menu" aria-labelledby="navbar-dropdown-link">
+            <li><a href="accessibility.html" class="dropdown-item">Accessibility</a></li>
+          </ul>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="events.html" id="navbar-dropdown-link" role="button"
+            data-bs-toggle="dropdown" aria-expanded="false" data-bs-auto-close="outside">Events</a>
+          <ul class="dropdown-menu" aria-labelledby="navbar-dropdown-link">
+            <li><a href="requestinfo.html" class="dropdown-item">Request info</a></li>
+          </ul>
+        </li>
+        <li class="nav-item active">
+          <a class="nav-link text-info" href="hotelnews.html">Hotel News</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="areaguide.html">Area Guide</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="contact.html">Contact</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+  <!--News Section-->
+  <section id="hotelnews" class="hotelnews">
+    <div class="container mt-5 mb-5">
+      <div class="row">
+        <div class="col-md-12">
+          <article>
+            <h3 class="text-info">Key Paradise news</h3>
+            <p>Welcome to the Key Paradise Hotel's news section, where you can stay updated on the latest happenings,
+              events, and exciting developments at our waterfront oasis. Explore insightful articles, captivating
+              stories, and informative updates that showcase our commitment to providing exceptional experiences for our
+              guests. Join us on this journey as we share the latest news and stories that highlight the latest
+              happenings at the Key Paradise Hotel.</p>
+            <h4 class="text-info">Here is some of the latest news:</h4>
+            <div class="newstories row mt-3">
+              <div class="col-md-6">
+                <img src="Hotel News images/openingcelebration.jpg" alt="Article Image" class="img-fluid">
+              </div>
+              <div class="col-md-6">
+                <h3 class="text-info">Key Paradise Grand Opening!</h3>
+                <p>Experience the grand opening of Key Paradise hotel, an extraordinary event that marks the
+                  beginning of a new era in luxury hospitality. Join us as we celebrate the unveiling of our stunning
+                  waterfront oasis, featuring impeccable design, world-class amenities, and unparalleled service. Be
+                  part of this momentous occasion and immerse yourself in a world of elegance, indulgence, and
+                  unforgettable experiences.</p>
+                <div class="d-grid text-center">
+                  <a href="#article" class="btn btn-info">Read More</a>
+                </div>
+              </div>
+            </div>
+            <hr>
+            <div class="newsletter-signup mt-5">
+              <h3 class="text-center text-info">Sign Up for Our Newsletter</h3>
+              <p class="text-center">Enter your email address below to receive periodic emails about special offers and
+                upcoming events.</p>
+              <form id="newsletter-form" class="row justify-content-center" action="#" method="post" novalidate>
+                <div class="col-sm-8 col-md-6">
+                  <div class="input-group mb-3">
+                    <input type="email" class="form-control" id="email-adress" placeholder="Email address" required>
+                    <div class="input-group-append">
+                      <button class="btn btn-info" type="submit">Sign Up</button>
+                    </div>
+                  </div>
+                  <div id="email-error" class="error-message"></div>
+                </div>
+              </form>
+            </div>
+          </article>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Footer Section -->
+  <section id="adress" class="adress bg-light text-center">
+    <div class="container mt-5">
+      <div class="row">
+        <div class="col-md-12">
+          <div class="contact-info">
+            <h4 class="mt-3">The Key Paradise Hotel</h4>
+            <h5>Address:</h5>
+            <p>123 Waterfront Street, Key West</p>
+            <h5>Phone:</h5>
+            <p>+1 123 456 7890</p>
+            <h5>Email:</h5>
+            <p>info@keyparadisehotel.com</p>
+            <h5>Follow Us:</h5>
+            <div class="social-links">
+              <a href="#" target="_blank">
+                <img class="p-2" src="Social Media Icons/Facebook.jpg" width="70px" height="70px" alt="Facebook"
+                  class="social-media-icon">
+              </a>
+              <a href="#" target="_blank">
+                <img class="p-2" src="Social Media Icons/Twitter.jpg" width="70px" height="70px" alt="Twitter"
+                  class="social-media-icon">
+              </a>
+              <a href="#" target="_blank">
+                <img class="p-2" src="Social Media Icons/Youtube.jpg" width="70px" height="70px" alt="Youtube"
+                  class="social-media-icon">
+              </a>
+              <a href="#" target="_blank">
+                <img class="p-2" src="Social Media Icons/Pinterest.jpg" width="70px" height="70px" alt="Pinterest"
+                  class="social-media-icon">
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer bg-secondary">
+    <div class="container text-center">
+      <span class="text-white">&copy; 2023 Key Paradise Hotel. All rights reserved.</span>
+    </div>
+  </footer>
+ <!--Vanilla JS-->
+ <script src="hotelnews.js"></script>
+  <!-- Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+
+</html>
